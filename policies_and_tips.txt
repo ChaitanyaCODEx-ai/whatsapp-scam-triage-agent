@@ -1,0 +1,61 @@
+# Knowledge base for the WhatsApp Scam Triage Agent.
+# NOTE: Policies P1-P4 are ILLUSTRATIVE, written for this student prototype. They are NOT WhatsApp's real internal policies.
+# Menu names for the privacy tips can differ slightly between app versions and platforms (Android / iOS).
+# Format: ### ID | KIND | tags: a, b | Title   (body lines follow until the next ###)
+
+### P1 | POLICY | tags: all | Escalate to a human trust & safety reviewer (priority 1)
+Escalate immediately when the message asks for a verification code, OTP, PIN or password; asks the user to install an app or APK; impersonates WhatsApp, Meta or platform staff; spreads as a forwarding chain to many people or groups; or matches a known critical scam pattern. Also escalate when many users report the same message (a campaign). Target review time: within 1 hour.
+
+### P2 | POLICY | tags: all | Report and queue for enforcement (priority 2)
+Report the message and sender when it is clearly a scam or phishing attempt: unsolicited prizes or jobs with upfront fees, links to lookalike login pages, impersonation with a money request, or fake investment offers. Action: add the sender to the report queue for account review. Target review time: within 24 hours.
+
+### P3 | POLICY | tags: all | Warn the user (priority 3)
+Warn the user when the message is suspicious but ambiguous: unsolicited contact from a stranger, unverified promotions, or low-confidence matches with no payment or credential request yet. Action: show a caution banner, suggest blocking, no enforcement on the sender.
+
+### P4 | POLICY | tags: all | No action (priority 4)
+Take no action for ordinary conversations, verified business notifications and messages that show no scam signals. Never penalise a sender on weak evidence.
+
+### P5 | POLICY | tags: otp_verification, account_suspension, bank_phishing | Verification codes are never shared
+A WhatsApp verification code is only for the account owner. No legitimate person, bank or support team will ask for it. Anyone who asks for it is trying to take over the account.
+
+### TS01 | TIP | tags: otp_verification, account_suspension, bank_phishing, family_impersonation | Turn on two-step verification
+Settings > Account > Two-step verification > Enable. Set a 6-digit PIN and add a recovery email. Even if a scammer tricks someone into sharing an SMS code, they cannot register your number without this PIN.
+
+### TS02 | TIP | tags: investment_crypto, fake_job, lottery_prize, fake_charity | Control who can add you to groups
+Settings > Privacy > Groups > choose My contacts or My contacts except. This stops strangers from adding you to fake job, crypto-signal or prize groups.
+
+### TS03 | TIP | tags: romance_scam, family_impersonation, bank_phishing, fake_job | Silence unknown callers
+Settings > Privacy > Calls > turn on Silence unknown callers. Scam callers and voice-phishing attempts from unsaved numbers will not ring on your phone.
+
+### TS04 | TIP | tags: all | Block messages from unknown accounts
+Settings > Privacy > Advanced > Block unknown account messages. This limits high-volume messages from numbers you have never talked to and reduces spam exposure.
+
+### TS05 | TIP | tags: family_impersonation, romance_scam, investment_crypto | Limit who sees your profile photo, About and last seen
+Settings > Privacy > Profile photo / About / Last seen and online > choose My contacts. Scammers copy public photos and names to impersonate you or people you know.
+
+### TS06 | TIP | tags: bank_phishing, fake_delivery, account_suspension, utility_govt_scam | Disable link previews and protect your IP address
+Settings > Privacy > Advanced > Disable link previews, and turn on Protect IP address in calls. Phishing links can no longer be silently fetched to preview, and your network location is hidden during calls.
+
+### TS07 | TIP | tags: fake_delivery, bank_phishing, lottery_prize | Turn off automatic media download
+Settings > Storage and data > Media auto-download > set every option to No media (or Wi-Fi only for photos). Malicious files and APKs are not downloaded before you can decide.
+
+### TS08 | TIP | tags: otp_verification, account_suspension | Review linked devices
+Settings > Linked devices. Log out of any device you do not recognise. Attackers who get a code often link a second device to read your chats.
+
+### TS09 | TIP | tags: all | Run Privacy Checkup
+Settings > Privacy > Privacy Checkup. It walks you step by step through who can contact you, who sees your details and how your account is protected.
+
+### TS10 | TIP | tags: all | Report and block the sender
+Open the chat, tap the contact name > Report (or long-press the message > Report), then Block. Reports help trust and safety teams spot repeat scam campaigns.
+
+### TS11 | TIP | tags: otp_verification, account_suspension, family_impersonation | Add a screen lock
+Settings > Privacy > Screen lock (Face ID / fingerprint on supported phones). Protects your chats if someone gets hold of your unlocked phone.
+
+### TH01 | TIP | tags: family_impersonation, romance_scam, payment_fraud | Verify by calling a saved number
+If someone claims to be family, a friend or your boss on a new number, call the number you already have saved before sending any money or codes.
+
+### TH02 | TIP | tags: lottery_prize, fake_charity, utility_govt_scam, investment_crypto | Do not forward chain messages
+Genuine prizes, schemes and charities never ask you to forward a message to unlock a reward. Pause, check the official website, and do not forward.
+
+### TH03 | TIP | tags: fake_delivery, bank_phishing, account_suspension | Install apps only from official stores
+Never install an APK or app sent in chat. Use only the official app store, and open banking or courier sites by typing the address yourself.

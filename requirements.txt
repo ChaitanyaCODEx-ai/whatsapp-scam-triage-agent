@@ -1,0 +1,8 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+streamlit>=1.36
+pandas
+google-genai>=1.0
+chromadb>=0.5.5
+sentence-transformers>=3.0
+torch
+pysqlite3-binary; sys_platform == "linux"
