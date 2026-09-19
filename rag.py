@@ -21,9 +21,7 @@ except ImportError:
 import chromadb
 from chromadb.config import Settings
 
-DATA_DIR = Path(__file__).parent / "data"
-EMBED_MODEL = "all-MiniLM-L6-v2"
-_state: dict = {}
+DATA_DIR = Path(__file__).parent / "data" if (Path(__file__).parent / "data").exists() else Path(__file__).parent
 
 
 def _embedding_fn():
